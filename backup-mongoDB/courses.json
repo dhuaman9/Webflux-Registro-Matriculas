@@ -1,0 +1,52 @@
+{
+    "_id" : ObjectId("65ce3ea7c6a6dc6cacb6925e"),
+    "name" : "Matematicas I",
+    "acronym" : "MATI",
+    "state" : true,
+    "_class" : "com.projectwebflux.model.Course"
+}
+{
+    "_id" : ObjectId("65ce3ec2c6a6dc6cacb6925f"),
+    "name" : "Epistemologia",
+    "acronym" : "EPI",
+    "state" : true,
+    "_class" : "com.projectwebflux.model.Course"
+}
+{
+    "_id" : ObjectId("65ce3ed5c6a6dc6cacb69260"),
+    "name" : "Psicologia Organizacional",
+    "acronym" : "PO",
+    "state" : true,
+    "_class" : "com.projectwebflux.model.Course"
+}
+{
+    "_id" : ObjectId("65ce3ee8c6a6dc6cacb69261"),
+    "name" : "Microeconomia",
+    "acronym" : "ME",
+    "state" : true,
+    "_class" : "com.projectwebflux.model.Course"
+}
+{
+    "_id" : ObjectId("65cfa5569b46f262271786f3"),
+    "name" : "Metodologia de la investigacion cientifica 2",
+    "acronym" : "MIC2",
+    "state" : true
+}
+{
+    "_id" : ObjectId("65cfa5659b46f262271786f4"),
+    "name" : "Metodologia de la investigacion cientifica 3",
+    "acronym" : "MIC3",
+    "state" : true
+}
+{
+    "_id" : ObjectId("65cfe29f1dec32319497f516"),
+    "name" : "Matematica 2",
+    "acronym" : "Mt2",
+    "state" : true
+}
+{
+    "_id" : ObjectId("65d5312c7e3e1d79cbde812c"),
+    "name" : "Matematica 3",
+    "acronym" : "Mt3-24",
+    "state" : true
+}

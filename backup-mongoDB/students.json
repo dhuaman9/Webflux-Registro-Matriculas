@@ -1,0 +1,59 @@
+{
+    "_id" : ObjectId("65cd0692efdfaf3004d7d295"),
+    "names" : "daniel",
+    "surnames" : "huaman",
+    "dni" : "72483923",
+    "age" : NumberInt(18),
+    "_class" : "com.projectmitocode.model.Student"
+}
+{
+    "_id" : ObjectId("65cd40f56b82e0162c8b5de7"),
+    "names" : "jose",
+    "surnames" : "ortega",
+    "dni" : "72483910",
+    "age" : NumberInt(22),
+    "_class" : "com.projectwebflux.model.Student"
+}
+{
+    "_id" : ObjectId("65cd8c5fdc91033e782fc74c"),
+    "names" : "norma",
+    "surnames" : "ricse",
+    "dni" : "72483711",
+    "age" : NumberInt(23),
+    "_class" : "com.projectwebflux.model.Student"
+}
+{
+    "_id" : ObjectId("65d0f62962bbbe2272df34d4"),
+    "names" : "jaime",
+    "surnames" : "medina",
+    "dni" : "02483711",
+    "age" : NumberInt(40)
+}
+{
+    "_id" : ObjectId("65d1330292b8946ae75d5857"),
+    "names" : "rob",
+    "surnames" : "du",
+    "dni" : "42483711",
+    "age" : NumberInt(40)
+}
+{
+    "_id" : ObjectId("65d24a0d948a1159c774f176"),
+    "names" : "maria",
+    "surnames" : "buitron",
+    "dni" : "32951115",
+    "age" : NumberInt(35)
+}
+{
+    "_id" : ObjectId("65d525fcba046731778de84b"),
+    "names" : "dani",
+    "surnames" : "ricse",
+    "dni" : "72483922",
+    "age" : NumberInt(30)
+}
+{
+    "_id" : ObjectId("65d52efa7e3e1d79cbde8129"),
+    "names" : "odett",
+    "surnames" : "mallorca",
+    "dni" : "52483922",
+    "age" : NumberInt(33)
+}

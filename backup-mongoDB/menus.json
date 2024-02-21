@@ -1,0 +1,28 @@
+{
+    "_id" : ObjectId("5f8f8f50fd111497fdc780c8"),
+    "icon" : "course_icon",
+    "name" : "Course",
+    "url" : "/courses",
+    "roles" : [
+        "ADMIN",
+        "USER"
+    ]
+}
+{
+    "_id" : ObjectId("5f8f8f50fd111497fdc780c9"),
+    "icon" : "enrollment_icon",
+    "name" : "Enrollment",
+    "url" : "/newEnrollment",
+    "roles" : [
+        "ADMIN"
+    ]
+}
+{
+    "_id" : ObjectId("5f8f8f50fd111497fdc780f7"),
+    "icon" : "students_icon",
+    "name" : "Students",
+    "url" : "/students",
+    "roles" : [
+        "ADMIN"
+    ]
+}

@@ -1,0 +1,2496 @@
+{
+	"info": {
+		"_postman_id": "e740374e-ea73-42a9-ad28-fd0913497c3a",
+		"name": "Proyecto final Webflux",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27888105"
+	},
+	"item": [
+		{
+			"name": "Funcional Endpoints",
+			"item": [
+				{
+					"name": "students FE",
+					"item": [
+						{
+							"name": "listar Students",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6WyJBRE1JTiJdLCJwYXNzd29yZC1kZW1vIjoic2FtcGxlIiwidXNlcm5hbWUiOiJkaHVhbWFuIiwic3ViIjoiZGh1YW1hbiIsImlhdCI6MTcwODQ2NzY2MiwiZXhwIjoxNzA4NDcwNjYyfQ.0ChPLdMAya2CVXr0ub4KE0kNFrF7jLA9e_fqvcmVIIZhRQ75Ch-hjbsbg2hMDEn_iDsn03z40hik4fx5qMb4fA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/v2/students",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"students"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v2/students",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"students"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65cd0692efdfaf3004d7d295\",\n        \"namesStudent\": \"daniel\",\n        \"surnamesStudent\": \"huaman\",\n        \"dniStudent\": \"72483923\",\n        \"ageStudent\": 18\n    },\n    {\n        \"id\": \"65cd40f56b82e0162c8b5de7\",\n        \"namesStudent\": \"jose\",\n        \"surnamesStudent\": \"ortega\",\n        \"dniStudent\": \"72483910\",\n        \"ageStudent\": 22\n    },\n    {\n        \"id\": \"65cd8c5fdc91033e782fc74c\",\n        \"namesStudent\": \"norma\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483711\",\n        \"ageStudent\": 23\n    },\n    {\n        \"id\": \"65cfe3b81dec32319497f51b\",\n        \"ageStudent\": 40\n    },\n    {\n        \"id\": \"65d0f62962bbbe2272df34d4\",\n        \"namesStudent\": \"jaime\",\n        \"surnamesStudent\": \"medina\",\n        \"dniStudent\": \"02483711\",\n        \"ageStudent\": 33\n    }\n]"
+								},
+								{
+									"name": "exito, con security",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v2/students",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"students"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65cd0692efdfaf3004d7d295\",\n        \"namesStudent\": \"daniel\",\n        \"surnamesStudent\": \"huaman\",\n        \"dniStudent\": \"72483923\",\n        \"ageStudent\": 18\n    },\n    {\n        \"id\": \"65cd40f56b82e0162c8b5de7\",\n        \"namesStudent\": \"jose\",\n        \"surnamesStudent\": \"ortega\",\n        \"dniStudent\": \"72483910\",\n        \"ageStudent\": 22\n    },\n    {\n        \"id\": \"65cd8c5fdc91033e782fc74c\",\n        \"namesStudent\": \"norma\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483711\",\n        \"ageStudent\": 23\n    },\n    {\n        \"id\": \"65d0f62962bbbe2272df34d4\",\n        \"namesStudent\": \"jaime\",\n        \"surnamesStudent\": \"medina\",\n        \"dniStudent\": \"02483711\",\n        \"ageStudent\": 40\n    },\n    {\n        \"id\": \"65d1330292b8946ae75d5857\",\n        \"namesStudent\": \"rob\",\n        \"surnamesStudent\": \"du\",\n        \"dniStudent\": \"42483711\",\n        \"ageStudent\": 40\n    },\n    {\n        \"id\": \"65d230a7794fa9582055e6ed\",\n        \"namesStudent\": \"peregrina\",\n        \"surnamesStudent\": \"buitron\",\n        \"dniStudent\": \"32951145\",\n        \"ageStudent\": 80\n    },\n    {\n        \"id\": \"65d24a0d948a1159c774f176\",\n        \"namesStudent\": \"maria\",\n        \"surnamesStudent\": \"buitron\",\n        \"dniStudent\": \"32951115\",\n        \"ageStudent\": 35\n    },\n    {\n        \"id\": \"65d525fcba046731778de84b\",\n        \"namesStudent\": \"dani\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483922\",\n        \"ageStudent\": 30\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "registrar students",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"namesStudent\": \"jaime\",\r\n    \"surnamesStudent\": \"medina\",\r\n    \"dniStudent\": \"02483711\",\r\n    \"ageStudent\": 33\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/v2/students",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"students"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"namesStudent\": \"jaime\",\r\n    \"surnamesStudent\": \"medina\",\r\n    \"dniStudent\": \"02483711\",\r\n    \"ageStudent\": 33\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v2/students",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"students"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Location",
+											"value": "http://localhost:8080/v2/students/65d0f62962bbbe2272df34d4"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "123"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65d0f62962bbbe2272df34d4\",\n    \"namesStudent\": \"jaime\",\n    \"surnamesStudent\": \"medina\",\n    \"dniStudent\": \"02483711\",\n    \"ageStudent\": 33\n}"
+								}
+							]
+						},
+						{
+							"name": "listarPorEdadDesc",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/v2/students/listarPorEdadDesc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"students",
+										"listarPorEdadDesc"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v2/students/listarPorEdadDesc",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"students",
+												"listarPorEdadDesc"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65cfe3b81dec32319497f51b\",\n        \"ageStudent\": 40\n    },\n    {\n        \"id\": \"65d0f62962bbbe2272df34d4\",\n        \"namesStudent\": \"jaime\",\n        \"surnamesStudent\": \"medina\",\n        \"dniStudent\": \"02483711\",\n        \"ageStudent\": 33\n    },\n    {\n        \"id\": \"65cd8c5fdc91033e782fc74c\",\n        \"namesStudent\": \"norma\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483711\",\n        \"ageStudent\": 23\n    },\n    {\n        \"id\": \"65cd40f56b82e0162c8b5de7\",\n        \"namesStudent\": \"jose\",\n        \"surnamesStudent\": \"ortega\",\n        \"dniStudent\": \"72483910\",\n        \"ageStudent\": 22\n    },\n    {\n        \"id\": \"65cd0692efdfaf3004d7d295\",\n        \"namesStudent\": \"daniel\",\n        \"surnamesStudent\": \"huaman\",\n        \"dniStudent\": \"72483923\",\n        \"ageStudent\": 18\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "listarPorEdadAsc",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/v2/students/listarPorEdadAsc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"students",
+										"listarPorEdadAsc"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v2/students/listarPorEdadAsc",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"students",
+												"listarPorEdadAsc"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65cd0692efdfaf3004d7d295\",\n        \"namesStudent\": \"daniel\",\n        \"surnamesStudent\": \"huaman\",\n        \"dniStudent\": \"72483923\",\n        \"ageStudent\": 18\n    },\n    {\n        \"id\": \"65cd40f56b82e0162c8b5de7\",\n        \"namesStudent\": \"jose\",\n        \"surnamesStudent\": \"ortega\",\n        \"dniStudent\": \"72483910\",\n        \"ageStudent\": 22\n    },\n    {\n        \"id\": \"65cd8c5fdc91033e782fc74c\",\n        \"namesStudent\": \"norma\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483711\",\n        \"ageStudent\": 23\n    },\n    {\n        \"id\": \"65d0f62962bbbe2272df34d4\",\n        \"namesStudent\": \"jaime\",\n        \"surnamesStudent\": \"medina\",\n        \"dniStudent\": \"02483711\",\n        \"ageStudent\": 33\n    },\n    {\n        \"id\": \"65cfe3b81dec32319497f51b\",\n        \"ageStudent\": 40\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "eliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/students/65cfe36e1dec32319497f51a",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"65cfe36e1dec32319497f51a"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v2/students/65cfe3b81dec32319497f51b",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"students",
+												"65cfe3b81dec32319497f51b"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "actualizar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"namesStudent\": \"jaime\",\r\n    \"surnamesStudent\": \"medina\",\r\n    \"dniStudent\": \"02483711\",\r\n    \"ageStudent\": 40\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/v2/students/65d0f62962bbbe2272df34d4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"students",
+										"65d0f62962bbbe2272df34d4"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"description": "Funcional Endpoints para Students"
+				},
+				{
+					"name": "Courses FE",
+					"item": [
+						{
+							"name": "registrar curso",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nameCourse\": \"Diseño Grafico\",\r\n    \"acronymCourse\": \"DGI24\",\r\n    \"stateCourse\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/v2/courses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"courses"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "se inserto curso diseño grafico",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nameCourse\": \"Diseño Grafico\",\r\n    \"acronymCourse\": \"DGI24\",\r\n    \"stateCourse\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v2/courses",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"courses"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Location",
+											"value": "http://localhost:8080/v2/courses/65d0f6fe62bbbe2272df34d5"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "107"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65d0f6fe62bbbe2272df34d5\",\n    \"nameCourse\": \"Diseño Grafico\",\n    \"acronymCourse\": \"DGI24\",\n    \"stateCourse\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "listar cursos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/v2/courses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"courses"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, se observa el curso nuevo: diseño grafico",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v2/courses",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"courses"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65ce3ea7c6a6dc6cacb6925e\",\n        \"nameCourse\": \"Matematicas I\",\n        \"acronymCourse\": \"MATI\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65ce3ec2c6a6dc6cacb6925f\",\n        \"nameCourse\": \"Epistemologia\",\n        \"acronymCourse\": \"EPI\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65ce3ed5c6a6dc6cacb69260\",\n        \"nameCourse\": \"Psicologia Organizacional\",\n        \"acronymCourse\": \"PO\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65ce3ee8c6a6dc6cacb69261\",\n        \"nameCourse\": \"Microeconomia\",\n        \"acronymCourse\": \"ME\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65ce3f05c6a6dc6cacb69262\",\n        \"nameCourse\": \"Metodologia de la investigacion cientifica\",\n        \"acronymCourse\": \"MIC\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65cfa5569b46f262271786f3\",\n        \"nameCourse\": \"Metodologia de la investigacion cientifica 2\",\n        \"acronymCourse\": \"MIC2\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65cfa5659b46f262271786f4\",\n        \"nameCourse\": \"Metodologia de la investigacion cientifica 3\",\n        \"acronymCourse\": \"MIC3\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65cfe29f1dec32319497f516\",\n        \"nameCourse\": \"Matematica 2\",\n        \"acronymCourse\": \"Mt2\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65d0f6fe62bbbe2272df34d5\",\n        \"nameCourse\": \"Diseño Grafico\",\n        \"acronymCourse\": \"DGI24\",\n        \"stateCourse\": true\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "actualizar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/courses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"courses"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "se actualizo diseño grafico",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nameCourse\": \"Diseño Grafico I\",\r\n    \"acronymCourse\": \"DGI24\",\r\n    \"stateCourse\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v2/courses/65d0f6fe62bbbe2272df34d5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"courses",
+												"65d0f6fe62bbbe2272df34d5"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "109"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65d0f6fe62bbbe2272df34d5\",\n    \"nameCourse\": \"Diseño Grafico I\",\n    \"acronymCourse\": \"DGI24\",\n    \"stateCourse\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "eliminar curso",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/v2/courses/65d0f6fe62bbbe2272df34d5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"courses",
+										"65d0f6fe62bbbe2272df34d5"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "se elimino diseño grafico I",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v2/courses/65d0f6fe62bbbe2272df34d5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"courses",
+												"65d0f6fe62bbbe2272df34d5"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					],
+					"description": "Funcional Endpoints to Courses"
+				},
+				{
+					"name": "Enrollment FE",
+					"item": [
+						{
+							"name": "nueva matricula",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dateEnrollment\" : \"2024-02-15 10:11\",\r\n    \"student\" : {\r\n        \"id\" : \"65cd8c5fdc91033e782fc74c\"\r\n    },\r\n    \"courses\" : [\r\n        {\r\n             \"id\" : \"65ce3f05c6a6dc6cacb69262\"\r\n        },\r\n\t{\r\n             \"id\" : \"65cfe29f1dec32319497f516\"\r\n        }\r\n\r\n    ],\r\n    \"state\" : \"true\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/v2/enrollments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"enrollments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, se inserto nueva matricula",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"dateEnrollment\" : \"2024-02-16 13:11:11\",\r\n    \"student\" : {\r\n        \"id\" : \"65cd8c5fdc91033e782fc74c\"\r\n    },\r\n    \"courses\" : [\r\n        {\r\n             \"id\" : \"65ce3f05c6a6dc6cacb69262\"\r\n        },\r\n\t{\r\n             \"id\" : \"65cfe29f1dec32319497f516\"\r\n        }\r\n\r\n    ],\r\n    \"state\" : \"true\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v2/enrollments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"enrollments"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Location",
+											"value": "http://localhost:8080/v2/enrollments/65d0f83962bbbe2272df34d6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "224"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65d0f83962bbbe2272df34d6\",\n    \"dateEnrollment\": \"2024-02-16 13:11:11\",\n    \"student\": {\n        \"id\": \"65cd8c5fdc91033e782fc74c\",\n        \"ageStudent\": 0\n    },\n    \"courses\": [\n        {\n            \"id\": \"65ce3f05c6a6dc6cacb69262\"\n        },\n        {\n            \"id\": \"65cfe29f1dec32319497f516\"\n        }\n    ],\n    \"state\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "listar matriculas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/v2/enrollments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"enrollments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v2/enrollments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"enrollments"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65ce45adc6a6dc6cacb69265\",\n        \"dateEnrollment\": \"2024-02-14 11:11:11\",\n        \"student\": {\n            \"id\": \"65cd0692efdfaf3004d7d295\",\n            \"ageStudent\": 0\n        },\n        \"courses\": [\n            {\n                \"id\": \"65ce3ea7c6a6dc6cacb6925e\",\n                \"stateCourse\": false\n            },\n            {\n                \"id\": \"65ce3ec2c6a6dc6cacb6925f\",\n                \"stateCourse\": false\n            }\n        ],\n        \"state\": true\n    },\n    {\n        \"id\": \"65cfa58b9b46f262271786f5\",\n        \"dateEnrollment\": \"2024-02-14 12:11:11\",\n        \"student\": {\n            \"id\": \"65cd0692efdfaf3004d7d295\",\n            \"ageStudent\": 0\n        },\n        \"courses\": [\n            {\n                \"id\": \"65ce3ea7c6a6dc6cacb6925e\"\n            },\n            {\n                \"id\": \"65ce3ec2c6a6dc6cacb6925f\"\n            }\n        ],\n        \"state\": true\n    },\n    {\n        \"id\": \"65cfe4551dec32319497f51c\",\n        \"dateEnrollment\": \"2024-02-16 10:11:11\",\n        \"student\": {\n            \"id\": \"65cd8c5fdc91033e782fc74c\",\n            \"ageStudent\": 0\n        },\n        \"courses\": [\n            {\n                \"id\": \"65ce3f05c6a6dc6cacb69262\"\n            },\n            {\n                \"id\": \"65cfe29f1dec32319497f516\"\n            }\n        ],\n        \"state\": true\n    },\n    {\n        \"id\": \"65d0f83962bbbe2272df34d6\",\n        \"dateEnrollment\": \"2024-02-16 13:11:11\",\n        \"student\": {\n            \"id\": \"65cd8c5fdc91033e782fc74c\",\n            \"ageStudent\": 0\n        },\n        \"courses\": [\n            {\n                \"id\": \"65ce3f05c6a6dc6cacb69262\"\n            },\n            {\n                \"id\": \"65cfe29f1dec32319497f516\"\n            }\n        ],\n        \"state\": true\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "actualizar, dar de baja",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dateEnrollment\" : \"2024-02-17 11:11:11\",\r\n    \"student\" : {\r\n        \"id\" : \"65cd8c5fdc91033e782fc74c\"\r\n    },\r\n    \"courses\" : [\r\n        {\r\n             \"id\" : \"65ce3f05c6a6dc6cacb69262\"\r\n        },\r\n\t{\r\n             \"id\" : \"65cfe29f1dec32319497f516\"\r\n        }\r\n\r\n    ],\r\n    \"state\" : \"false\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/v2/enrollments/65d0f83962bbbe2272df34d6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"enrollments",
+										"65d0f83962bbbe2272df34d6"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, se dio de baja a una matricula",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"dateEnrollment\" : \"2024-02-17 11:11:11\",\r\n    \"student\" : {\r\n        \"id\" : \"65cd8c5fdc91033e782fc74c\"\r\n    },\r\n    \"courses\" : [\r\n        {\r\n             \"id\" : \"65ce3f05c6a6dc6cacb69262\"\r\n        },\r\n\t{\r\n             \"id\" : \"65cfe29f1dec32319497f516\"\r\n        }\r\n\r\n    ],\r\n    \"state\" : \"false\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/v2/enrollments/65d0f83962bbbe2272df34d6",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"enrollments",
+												"65d0f83962bbbe2272df34d6"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "225"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65d0f83962bbbe2272df34d6\",\n    \"dateEnrollment\": \"2024-02-17 11:11:11\",\n    \"student\": {\n        \"id\": \"65cd8c5fdc91033e782fc74c\",\n        \"ageStudent\": 0\n    },\n    \"courses\": [\n        {\n            \"id\": \"65ce3f05c6a6dc6cacb69262\"\n        },\n        {\n            \"id\": \"65cfe29f1dec32319497f516\"\n        }\n    ],\n    \"state\": false\n}"
+								}
+							]
+						},
+						{
+							"name": "eliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/enrollments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"enrollments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, se elimino a 65d0f83962bbbe2272df34d6",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/v2/enrollments/65d0f83962bbbe2272df34d6",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"v2",
+												"enrollments",
+												"65d0f83962bbbe2272df34d6"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					],
+					"description": "Funcional Endpoints to Enrollments"
+				}
+			]
+		},
+		{
+			"name": "Enfoque Anotacional",
+			"item": [
+				{
+					"name": "students",
+					"item": [
+						{
+							"name": "listar Students",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6WyJBRE1JTiJdLCJwYXNzd29yZC1kZW1vIjoic2FtcGxlIiwidXNlcm5hbWUiOiJkaHVhbWFuIiwic3ViIjoiZGh1YW1hbiIsImlhdCI6MTcwODQ2NzY2MiwiZXhwIjoxNzA4NDcwNjYyfQ.0ChPLdMAya2CVXr0ub4KE0kNFrF7jLA9e_fqvcmVIIZhRQ75Ch-hjbsbg2hMDEn_iDsn03z40hik4fx5qMb4fA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/students",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, con security",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/students",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"students"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65cd0692efdfaf3004d7d295\",\n        \"namesStudent\": \"daniel\",\n        \"surnamesStudent\": \"huaman\",\n        \"dniStudent\": \"72483923\",\n        \"ageStudent\": 18\n    },\n    {\n        \"id\": \"65cd40f56b82e0162c8b5de7\",\n        \"namesStudent\": \"jose\",\n        \"surnamesStudent\": \"ortega\",\n        \"dniStudent\": \"72483910\",\n        \"ageStudent\": 22\n    },\n    {\n        \"id\": \"65cd8c5fdc91033e782fc74c\",\n        \"namesStudent\": \"norma\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483711\",\n        \"ageStudent\": 23\n    },\n    {\n        \"id\": \"65d0f62962bbbe2272df34d4\",\n        \"namesStudent\": \"jaime\",\n        \"surnamesStudent\": \"medina\",\n        \"dniStudent\": \"02483711\",\n        \"ageStudent\": 40\n    },\n    {\n        \"id\": \"65d1330292b8946ae75d5857\",\n        \"namesStudent\": \"rob\",\n        \"surnamesStudent\": \"du\",\n        \"dniStudent\": \"42483711\",\n        \"ageStudent\": 40\n    },\n    {\n        \"id\": \"65d230a7794fa9582055e6ed\",\n        \"namesStudent\": \"peregrina\",\n        \"surnamesStudent\": \"buitron\",\n        \"dniStudent\": \"32951145\",\n        \"ageStudent\": 80\n    },\n    {\n        \"id\": \"65d24a0d948a1159c774f176\",\n        \"namesStudent\": \"maria\",\n        \"surnamesStudent\": \"buitron\",\n        \"dniStudent\": \"32951115\",\n        \"ageStudent\": 35\n    },\n    {\n        \"id\": \"65d525fcba046731778de84b\",\n        \"namesStudent\": \"dani\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483922\",\n        \"ageStudent\": 30\n    },\n    {\n        \"id\": \"65d52efa7e3e1d79cbde8129\",\n        \"namesStudent\": \"odett\",\n        \"surnamesStudent\": \"mallorca\",\n        \"dniStudent\": \"52483922\",\n        \"ageStudent\": 30\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "registrar students",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6WyJBRE1JTiJdLCJwYXNzd29yZC1kZW1vIjoic2FtcGxlIiwidXNlcm5hbWUiOiJkaHVhbWFuIiwic3ViIjoiZGh1YW1hbiIsImlhdCI6MTcwODQ2NzY2MiwiZXhwIjoxNzA4NDcwNjYyfQ.0ChPLdMAya2CVXr0ub4KE0kNFrF7jLA9e_fqvcmVIIZhRQ75Ch-hjbsbg2hMDEn_iDsn03z40hik4fx5qMb4fA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"namesStudent\": \"dani\",\r\n    \"surnamesStudent\": \"ricse\",\r\n    \"dniStudent\": \"72483922\",\r\n    \"ageStudent\": 30\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/students",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "error, dni ya existe",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"namesStudent\": \"maria\",\r\n    \"surnamesStudent\": \"buitron\",\r\n    \"dniStudent\": \"32951115\",\r\n    \"ageStudent\": 35\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/students",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"students"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "319"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Bad Request, el DNI ya existe en la base de datos.\",\n    \"responseCode\": 400,\n    \"errorDetails\": \"Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: tuition2024i.students index: unique_dni dup key: { dni: \\\"32951115\\\" }', details={}}.\"\n}"
+								},
+								{
+									"name": "registrado, con security",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"namesStudent\": \"dani\",\r\n    \"surnamesStudent\": \"ricse\",\r\n    \"dniStudent\": \"72483922\",\r\n    \"ageStudent\": 30\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/students",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"students"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Location",
+											"value": "http://localhost:8080/students/65d525fcba046731778de84b"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "121"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65d525fcba046731778de84b\",\n    \"namesStudent\": \"dani\",\n    \"surnamesStudent\": \"ricse\",\n    \"dniStudent\": \"72483922\",\n    \"ageStudent\": 30\n}"
+								}
+							]
+						},
+						{
+							"name": "listarPorEdadDesc",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/students/listarPorEdadDesc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"listarPorEdadDesc"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, con security",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/students/listarPorEdadDesc",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"students",
+												"listarPorEdadDesc"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65d230a7794fa9582055e6ed\",\n        \"namesStudent\": \"peregrina\",\n        \"surnamesStudent\": \"buitron\",\n        \"dniStudent\": \"32951145\",\n        \"ageStudent\": 80\n    },\n    {\n        \"id\": \"65d0f62962bbbe2272df34d4\",\n        \"namesStudent\": \"jaime\",\n        \"surnamesStudent\": \"medina\",\n        \"dniStudent\": \"02483711\",\n        \"ageStudent\": 40\n    },\n    {\n        \"id\": \"65d1330292b8946ae75d5857\",\n        \"namesStudent\": \"rob\",\n        \"surnamesStudent\": \"du\",\n        \"dniStudent\": \"42483711\",\n        \"ageStudent\": 40\n    },\n    {\n        \"id\": \"65d24a0d948a1159c774f176\",\n        \"namesStudent\": \"maria\",\n        \"surnamesStudent\": \"buitron\",\n        \"dniStudent\": \"32951115\",\n        \"ageStudent\": 35\n    },\n    {\n        \"id\": \"65d525fcba046731778de84b\",\n        \"namesStudent\": \"dani\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483922\",\n        \"ageStudent\": 30\n    },\n    {\n        \"id\": \"65d52efa7e3e1d79cbde8129\",\n        \"namesStudent\": \"odett\",\n        \"surnamesStudent\": \"mallorca\",\n        \"dniStudent\": \"52483922\",\n        \"ageStudent\": 30\n    },\n    {\n        \"id\": \"65cd8c5fdc91033e782fc74c\",\n        \"namesStudent\": \"norma\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483711\",\n        \"ageStudent\": 23\n    },\n    {\n        \"id\": \"65cd40f56b82e0162c8b5de7\",\n        \"namesStudent\": \"jose\",\n        \"surnamesStudent\": \"ortega\",\n        \"dniStudent\": \"72483910\",\n        \"ageStudent\": 22\n    },\n    {\n        \"id\": \"65cd0692efdfaf3004d7d295\",\n        \"namesStudent\": \"daniel\",\n        \"surnamesStudent\": \"huaman\",\n        \"dniStudent\": \"72483923\",\n        \"ageStudent\": 18\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "listarPorEdadAsc",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/students/listarPorEdadAsc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"listarPorEdadAsc"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, con security",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/students/listarPorEdadAsc",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"students",
+												"listarPorEdadAsc"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65cd0692efdfaf3004d7d295\",\n        \"namesStudent\": \"daniel\",\n        \"surnamesStudent\": \"huaman\",\n        \"dniStudent\": \"72483923\",\n        \"ageStudent\": 18\n    },\n    {\n        \"id\": \"65cd40f56b82e0162c8b5de7\",\n        \"namesStudent\": \"jose\",\n        \"surnamesStudent\": \"ortega\",\n        \"dniStudent\": \"72483910\",\n        \"ageStudent\": 22\n    },\n    {\n        \"id\": \"65cd8c5fdc91033e782fc74c\",\n        \"namesStudent\": \"norma\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483711\",\n        \"ageStudent\": 23\n    },\n    {\n        \"id\": \"65d525fcba046731778de84b\",\n        \"namesStudent\": \"dani\",\n        \"surnamesStudent\": \"ricse\",\n        \"dniStudent\": \"72483922\",\n        \"ageStudent\": 30\n    },\n    {\n        \"id\": \"65d52efa7e3e1d79cbde8129\",\n        \"namesStudent\": \"odett\",\n        \"surnamesStudent\": \"mallorca\",\n        \"dniStudent\": \"52483922\",\n        \"ageStudent\": 30\n    },\n    {\n        \"id\": \"65d24a0d948a1159c774f176\",\n        \"namesStudent\": \"maria\",\n        \"surnamesStudent\": \"buitron\",\n        \"dniStudent\": \"32951115\",\n        \"ageStudent\": 35\n    },\n    {\n        \"id\": \"65d0f62962bbbe2272df34d4\",\n        \"namesStudent\": \"jaime\",\n        \"surnamesStudent\": \"medina\",\n        \"dniStudent\": \"02483711\",\n        \"ageStudent\": 40\n    },\n    {\n        \"id\": \"65d1330292b8946ae75d5857\",\n        \"namesStudent\": \"rob\",\n        \"surnamesStudent\": \"du\",\n        \"dniStudent\": \"42483711\",\n        \"ageStudent\": 40\n    },\n    {\n        \"id\": \"65d230a7794fa9582055e6ed\",\n        \"namesStudent\": \"peregrina\",\n        \"surnamesStudent\": \"buitron\",\n        \"dniStudent\": \"32951145\",\n        \"ageStudent\": 80\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "eliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/students/65cfe36e1dec32319497f51a",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"65cfe36e1dec32319497f51a"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, con security",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/students/65d230a7794fa9582055e6ed",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"students",
+												"65d230a7794fa9582055e6ed"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "actualizar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ageStudent\": 40\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/students/65cfe3b81dec32319497f51b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"students",
+										"65cfe3b81dec32319497f51b"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, actualizando edad, con security",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"namesStudent\": \"odett\",\r\n    \"surnamesStudent\": \"mallorca\",\r\n    \"dniStudent\": \"52483922\",\r\n    \"ageStudent\": 33\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/students/65d52efa7e3e1d79cbde8129",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"students",
+												"65d52efa7e3e1d79cbde8129"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "125"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65d52efa7e3e1d79cbde8129\",\n    \"namesStudent\": \"odett\",\n    \"surnamesStudent\": \"mallorca\",\n    \"dniStudent\": \"52483922\",\n    \"ageStudent\": 33\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "courses",
+					"item": [
+						{
+							"name": "registrar curso",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nameCourse\": \"Matematica 2\",\r\n    \"acronymCourse\": \"Mt2\",\r\n    \"stateCourse\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/courses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"courses"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, con security",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nameCourse\": \"Matematica 3\",\r\n    \"acronymCourse\": \"Mt3-24\",\r\n    \"stateCourse\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/courses",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"courses"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Location",
+											"value": "http://localhost:8080/courses/65d5312c7e3e1d79cbde812c"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "105"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65d5312c7e3e1d79cbde812c\",\n    \"nameCourse\": \"Matematica 3\",\n    \"acronymCourse\": \"Mt3-24\",\n    \"stateCourse\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "listar cursos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/courses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"courses"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, con security",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/courses",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"courses"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65ce3ea7c6a6dc6cacb6925e\",\n        \"nameCourse\": \"Matematicas I\",\n        \"acronymCourse\": \"MATI\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65ce3ec2c6a6dc6cacb6925f\",\n        \"nameCourse\": \"Epistemologia\",\n        \"acronymCourse\": \"EPI\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65ce3ed5c6a6dc6cacb69260\",\n        \"nameCourse\": \"Psicologia Organizacional\",\n        \"acronymCourse\": \"PO\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65ce3ee8c6a6dc6cacb69261\",\n        \"nameCourse\": \"Microeconomia\",\n        \"acronymCourse\": \"ME\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65cfa5569b46f262271786f3\",\n        \"nameCourse\": \"Metodologia de la investigacion cientifica 2\",\n        \"acronymCourse\": \"MIC2\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65cfa5659b46f262271786f4\",\n        \"nameCourse\": \"Metodologia de la investigacion cientifica 3\",\n        \"acronymCourse\": \"MIC3\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65cfe29f1dec32319497f516\",\n        \"nameCourse\": \"Matematica 2\",\n        \"acronymCourse\": \"Mt2\",\n        \"stateCourse\": true\n    },\n    {\n        \"id\": \"65d5312c7e3e1d79cbde812c\",\n        \"nameCourse\": \"Matematica 3\",\n        \"acronymCourse\": \"Mt3-24\",\n        \"stateCourse\": true\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "eliminar curso",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/courses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"courses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "actualizar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nameCourse\": \"Metodologia de la investigacion cientifica\",\r\n    \"acronymCourse\": \"MIC24\",\r\n    \"stateCourse\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/courses/65ce3f05c6a6dc6cacb69262",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"courses",
+										"65ce3f05c6a6dc6cacb69262"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nameCourse\": \"Metodologia de la investigacion cientifica\",\r\n    \"acronymCourse\": \"MIC24\",\r\n    \"stateCourse\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/courses/65ce3f05c6a6dc6cacb69262",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"courses",
+												"65ce3f05c6a6dc6cacb69262"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "134"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65ce3f05c6a6dc6cacb69262\",\n    \"nameCourse\": \"Metodologia de la investigacion cientifica\",\n    \"acronymCourse\": \"MIC24\",\n    \"stateCourse\": true\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "enrollment",
+					"item": [
+						{
+							"name": "nueva matricula",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dateEnrollment\" : \"2024-02-16 10:11:11\",\r\n    \"student\" : {\r\n        \"id\" : \"65cd8c5fdc91033e782fc74c\"\r\n    },\r\n    \"courses\" : [\r\n        {\r\n             \"id\" : \"65ce3f05c6a6dc6cacb69262\"\r\n        },\r\n\t{\r\n             \"id\" : \"65ce3ed5c6a6dc6cacb69260\"\r\n        }\r\n\r\n    ],\r\n    \"state\" : \"true\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/enrollments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"enrollments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "error en fecha",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"dateEnrollment\" : \"2024-02-15 10\",\r\n    \"student\" : {\r\n        \"id\" : \"65cd8c5fdc91033e782fc74c\"\r\n    },\r\n    \"courses\" : [\r\n        {\r\n             \"id\" : \"65ce3f05c6a6dc6cacb69262\"\r\n        },\r\n\t{\r\n             \"id\" : \"65cfe29f1dec32319497f516\"\r\n        }\r\n\r\n    ],\r\n    \"state\" : \"true\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/enrollments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"enrollments"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "mitocode"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "7423"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"timestamp\": \"2024-02-16T22:40:59.329+00:00\",\n    \"path\": \"/enrollments\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"message\": \"Failed to read HTTP message\",\n    \"requestId\": \"4acc711e-25\",\n    \"trace\": \"org.springframework.core.codec.DecodingException: JSON decoding error: Cannot deserialize value of type `java.time.LocalDateTime` from String \\\"2024-02-15 10\\\": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '2024-02-15 10' could not be parsed at index 13\\r\\n\\tat org.springframework.http.codec.json.AbstractJackson2Decoder.processException(AbstractJackson2Decoder.java:275)\\r\\n\\tat org.springframework.http.codec.json.AbstractJackson2Decoder.decode(AbstractJackson2Decoder.java:211)\\r\\n\\tat org.springframework.http.codec.json.AbstractJackson2Decoder.lambda$decodeToMono$2(AbstractJackson2Decoder.java:191)\\r\\n\\tat reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132)\\r\\n\\tat reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)\\r\\n\\tat reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)\\r\\n\\tat reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)\\r\\n\\tat reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)\\r\\n\\tat reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)\\r\\n\\tat reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)\\r\\n\\tat reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)\\r\\n\\tat reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)\\r\\n\\tat reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:415)\\r\\n\\tat reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:446)\\r\\n\\tat reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:687)\\r\\n\\tat reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:114)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\\r\\n\\tat reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:284)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\\r\\n\\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)\\r\\n\\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)\\r\\n\\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)\\r\\n\\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)\\r\\n\\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)\\r\\n\\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)\\r\\n\\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)\\r\\n\\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)\\r\\n\\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\\r\\n\\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\\r\\n\\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\\r\\n\\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\\r\\n\\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\\r\\n\\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\\r\\n\\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\nCaused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDateTime` from String \\\"2024-02-15 10\\\": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '2024-02-15 10' could not be parsed at index 13\\n at [Source: (org.springframework.core.io.buffer.DataBufferInputStream); line: 2, column: 24] (through reference chain: com.projectwebflux.dto.EnrollmentDTO[\\\"dateEnrollment\\\"])\\r\\n\\tat com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)\\r\\n\\tat com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:2002)\\r\\n\\tat com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:1230)\\r\\n\\tat com.fasterxml.jackson.datatype.jsr310.deser.JSR310DeserializerBase._handleDateTimeException(JSR310DeserializerBase.java:176)\\r\\n\\tat com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer._fromString(LocalDateTimeDeserializer.java:179)\\r\\n\\tat com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer.deserialize(LocalDateTimeDeserializer.java:81)\\r\\n\\tat com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer.deserialize(LocalDateTimeDeserializer.java:40)\\r\\n\\tat com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)\\r\\n\\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:392)\\r\\n\\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)\\r\\n\\tat com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)\\r\\n\\tat com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105)\\r\\n\\tat com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481)\\r\\n\\tat org.springframework.http.codec.json.AbstractJackson2Decoder.decode(AbstractJackson2Decoder.java:206)\\r\\n\\t... 41 more\\r\\nCaused by: java.time.format.DateTimeParseException: Text '2024-02-15 10' could not be parsed at index 13\\r\\n\\tat java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)\\r\\n\\tat java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1954)\\r\\n\\tat java.base/java.time.LocalDateTime.parse(LocalDateTime.java:494)\\r\\n\\tat com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer._fromString(LocalDateTimeDeserializer.java:177)\\r\\n\\t... 50 more\\r\\n\"\n}"
+								},
+								{
+									"name": "exito, con security",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"dateEnrollment\" : \"2024-02-20 10:12:12\",\r\n    \"student\" : {\r\n        \"id\" : \"65d52efa7e3e1d79cbde8129\"\r\n    },\r\n    \"courses\" : [\r\n        {\r\n             \"id\" : \"65ce3f05c6a6dc6cacb69262\"\r\n        },\r\n\t    {\r\n             \"id\" : \"65ce3ed5c6a6dc6cacb69260\"\r\n        },\r\n        {\r\n             \"id\" : \"65ce3ed5c6a6dc6cacb69260\"\r\n        }\r\n\r\n    ],\r\n    \"state\" : \"true\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/enrollments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"enrollments"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Location",
+											"value": "http://localhost:8080/enrollments/65d531a77e3e1d79cbde812d"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "224"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65d531a77e3e1d79cbde812d\",\n    \"dateEnrollment\": \"2024-02-20 10:12:12\",\n    \"student\": {\n        \"id\": \"65d52efa7e3e1d79cbde8129\",\n        \"ageStudent\": 0\n    },\n    \"courses\": [\n        {\n            \"id\": \"65ce3f05c6a6dc6cacb69262\"\n        },\n        {\n            \"id\": \"65ce3ed5c6a6dc6cacb69260\"\n        }\n    ],\n    \"state\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "listar matriculas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/enrollments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"enrollments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "exito, con ecurity",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/enrollments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"enrollments"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"65ce45adc6a6dc6cacb69265\",\n        \"dateEnrollment\": \"2024-02-14 11:11:11\",\n        \"student\": {\n            \"id\": \"65cd0692efdfaf3004d7d295\",\n            \"ageStudent\": 0\n        },\n        \"courses\": [\n            {\n                \"id\": \"65ce3ea7c6a6dc6cacb6925e\",\n                \"stateCourse\": false\n            },\n            {\n                \"id\": \"65ce3ec2c6a6dc6cacb6925f\",\n                \"stateCourse\": false\n            }\n        ],\n        \"state\": true\n    },\n    {\n        \"id\": \"65cfa58b9b46f262271786f5\",\n        \"dateEnrollment\": \"2024-02-14 12:11:11\",\n        \"student\": {\n            \"id\": \"65cd0692efdfaf3004d7d295\",\n            \"ageStudent\": 0\n        },\n        \"courses\": [\n            {\n                \"id\": \"65ce3ea7c6a6dc6cacb6925e\"\n            },\n            {\n                \"id\": \"65ce3ec2c6a6dc6cacb6925f\"\n            }\n        ],\n        \"state\": true\n    },\n    {\n        \"id\": \"65cfe4551dec32319497f51c\",\n        \"dateEnrollment\": \"2024-02-16 10:11:11\",\n        \"student\": {\n            \"id\": \"65cd8c5fdc91033e782fc74c\",\n            \"ageStudent\": 0\n        },\n        \"courses\": [\n            {\n                \"id\": \"65ce3f05c6a6dc6cacb69262\"\n            },\n            {\n                \"id\": \"65cfe29f1dec32319497f516\"\n            }\n        ],\n        \"state\": true\n    },\n    {\n        \"id\": \"65d2876d12ee125248540666\",\n        \"dateEnrollment\": \"2024-02-16 10:11:11\",\n        \"student\": {\n            \"id\": \"65cd8c5fdc91033e782fc74c\",\n            \"ageStudent\": 0\n        },\n        \"courses\": [\n            {\n                \"id\": \"65ce3f05c6a6dc6cacb69262\"\n            }\n        ],\n        \"state\": true\n    },\n    {\n        \"id\": \"65d2879d12ee125248540667\",\n        \"dateEnrollment\": \"2024-02-16 10:11:11\",\n        \"student\": {\n            \"id\": \"65cd8c5fdc91033e782fc74c\",\n            \"ageStudent\": 0\n        },\n        \"courses\": [\n            {\n                \"id\": \"65ce3f05c6a6dc6cacb69262\"\n            },\n            {\n                \"id\": \"65ce3ed5c6a6dc6cacb69260\"\n            }\n        ],\n        \"state\": true\n    },\n    {\n        \"id\": \"65d531a77e3e1d79cbde812d\",\n        \"dateEnrollment\": \"2024-02-20 10:12:12\",\n        \"student\": {\n            \"id\": \"65d52efa7e3e1d79cbde8129\",\n            \"ageStudent\": 0\n        },\n        \"courses\": [\n            {\n                \"id\": \"65ce3f05c6a6dc6cacb69262\"\n            },\n            {\n                \"id\": \"65ce3ed5c6a6dc6cacb69260\"\n            }\n        ],\n        \"state\": true\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "actualizar",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/enrollments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"enrollments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "se dio de baja a matricula",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"dateEnrollment\": \"2024-02-20 18:12:12\",\r\n    \"student\": {\r\n        \"id\": \"65d52efa7e3e1d79cbde8129\",\r\n        \"ageStudent\": 0\r\n    },\r\n    \"courses\": [\r\n        {\r\n            \"id\": \"65ce3f05c6a6dc6cacb69262\"\r\n        },\r\n        {\r\n            \"id\": \"65ce3ed5c6a6dc6cacb69260\"\r\n        }\r\n    ],\r\n    \"state\": false\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/enrollments/65d531a77e3e1d79cbde812d",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"enrollments",
+												"65d531a77e3e1d79cbde812d"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "225"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"65d531a77e3e1d79cbde812d\",\n    \"dateEnrollment\": \"2024-02-20 18:12:12\",\n    \"student\": {\n        \"id\": \"65d52efa7e3e1d79cbde8129\",\n        \"ageStudent\": 0\n    },\n    \"courses\": [\n        {\n            \"id\": \"65ce3f05c6a6dc6cacb69262\"\n        },\n        {\n            \"id\": \"65ce3ed5c6a6dc6cacb69260\"\n        }\n    ],\n    \"state\": false\n}"
+								}
+							]
+						},
+						{
+							"name": "eliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/enrollments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"enrollments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "se elimino 65d531a77e3e1d79cbde812d  con security",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/enrollments/65d531a77e3e1d79cbde812d",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"enrollments",
+												"65d531a77e3e1d79cbde812d"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "user",
+											"value": "daniel"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"dhuaman\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "exito, con admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"dhuaman\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "user",
+							"value": "daniel"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "319"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6WyJBRE1JTiJdLCJwYXNzd29yZC1kZW1vIjoic2FtcGxlIiwidXNlcm5hbWUiOiJkaHVhbWFuIiwic3ViIjoiZGh1YW1hbiIsImlhdCI6MTcwODQ3MDMxNywiZXhwIjoxNzA4NDczMzE3fQ.4wwNaBbGQe57T-zPjMfNPuLPl4J-dZf3WSiGB0HwMtMXh372vwCnsg-uJ-dB9ce4GP0QYpekdcU3NNtzfIXRVA\",\n    \"expiration\": \"2024-02-20T23:55:17.000+00:00\"\n}"
+				},
+				{
+					"name": "exito, con user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"mito\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "user",
+							"value": "daniel"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "309"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6WyJVU0VSIl0sInBhc3N3b3JkLWRlbW8iOiJzYW1wbGUiLCJ1c2VybmFtZSI6Im1pdG8iLCJzdWIiOiJtaXRvIiwiaWF0IjoxNzA4NDcwOTE0LCJleHAiOjE3MDg0NzM5MTR9.7NtKxl2mcjW5Hu4qftkLxneM27pdd-TU0Eguqdm3yRE9cn7ZW2dhSsSX1uxe6wRCWFA_sjLJU7IdAMMSMJ0NZg\",\n    \"expiration\": \"2024-02-21T00:05:14.000+00:00\"\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,85 @@
+{
+    "_id" : ObjectId("65ce45adc6a6dc6cacb69265"),
+    "dateEnrollment" : ISODate("2024-02-14T16:11:11.000+0000"),
+    "student" : {
+        "_id" : ObjectId("65cd0692efdfaf3004d7d295"),
+        "age" : NumberInt(0)
+    },
+    "courses" : [
+        {
+            "_id" : ObjectId("65ce3ea7c6a6dc6cacb6925e"),
+            "state" : false
+        },
+        {
+            "_id" : ObjectId("65ce3ec2c6a6dc6cacb6925f"),
+            "state" : false
+        }
+    ],
+    "state" : true,
+    "_class" : "com.projectwebflux.model.Enrollment"
+}
+{
+    "_id" : ObjectId("65cfa58b9b46f262271786f5"),
+    "dateEnrollment" : ISODate("2024-02-14T17:11:11.000+0000"),
+    "student" : {
+        "_id" : ObjectId("65cd0692efdfaf3004d7d295"),
+        "age" : NumberInt(0)
+    },
+    "courses" : [
+        {
+            "_id" : ObjectId("65ce3ea7c6a6dc6cacb6925e")
+        },
+        {
+            "_id" : ObjectId("65ce3ec2c6a6dc6cacb6925f")
+        }
+    ],
+    "state" : true
+}
+{
+    "_id" : ObjectId("65cfe4551dec32319497f51c"),
+    "dateEnrollment" : ISODate("2024-02-16T15:11:11.000+0000"),
+    "student" : {
+        "_id" : ObjectId("65cd8c5fdc91033e782fc74c"),
+        "age" : NumberInt(0)
+    },
+    "courses" : [
+        {
+            "_id" : ObjectId("65ce3f05c6a6dc6cacb69262")
+        },
+        {
+            "_id" : ObjectId("65cfe29f1dec32319497f516")
+        }
+    ],
+    "state" : true
+}
+{
+    "_id" : ObjectId("65d2876d12ee125248540666"),
+    "dateEnrollment" : ISODate("2024-02-16T15:11:11.000+0000"),
+    "student" : {
+        "_id" : ObjectId("65cd8c5fdc91033e782fc74c"),
+        "age" : NumberInt(0)
+    },
+    "courses" : [
+        {
+            "_id" : ObjectId("65ce3f05c6a6dc6cacb69262")
+        }
+    ],
+    "state" : true
+}
+{
+    "_id" : ObjectId("65d2879d12ee125248540667"),
+    "dateEnrollment" : ISODate("2024-02-16T15:11:11.000+0000"),
+    "student" : {
+        "_id" : ObjectId("65cd8c5fdc91033e782fc74c"),
+        "age" : NumberInt(0)
+    },
+    "courses" : [
+        {
+            "_id" : ObjectId("65ce3f05c6a6dc6cacb69262")
+        },
+        {
+            "_id" : ObjectId("65ce3ed5c6a6dc6cacb69260")
+        }
+    ],
+    "state" : true
+}

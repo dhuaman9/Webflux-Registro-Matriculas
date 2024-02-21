@@ -1,0 +1,8 @@
+{
+    "_id" : ObjectId("5e0181036406aa781ce6440e"),
+    "name" : "ADMIN"
+}
+{
+    "_id" : ObjectId("5e0181106406aa781ce6440f"),
+    "name" : "USER"
+}

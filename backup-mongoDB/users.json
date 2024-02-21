@@ -1,0 +1,22 @@
+{
+    "_id" : ObjectId("5e01811b6406aa781ce64410"),
+    "username" : "dhuaman",
+    "password" : "$2a$10$ju20i95JTDkRa7Sua63JWOChSBc0MNFtG/6Sps2ahFFqN.HCCUMW.",
+    "status" : true,
+    "roles" : [
+        {
+            "_id" : ObjectId("5e0181036406aa781ce6440e")
+        }
+    ]
+}
+{
+    "_id" : ObjectId("5e052cd662f50066a04e0460"),
+    "username" : "mito",
+    "password" : "$2a$10$ju20i95JTDkRa7Sua63JWOChSBc0MNFtG/6Sps2ahFFqN.HCCUMW.",
+    "status" : true,
+    "roles" : [
+        {
+            "_id" : ObjectId("5e0181106406aa781ce6440f")
+        }
+    ]
+}
